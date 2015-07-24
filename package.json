@@ -1,0 +1,40 @@
+{
+  "name": "ml-tanimoto",
+  "version": "0.0.0",
+  "description": "Tanimoto similarity and distance methods",
+  "main": "src/tanimoto.js",
+  "directories": {
+    "lib": "src",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --require should --reporter mocha-better-spec-reporter --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mljs/tanimoto"
+  },
+  "keywords": [
+    "tanimoto",
+    "similarity",
+    "distance",
+    "metric",
+    "jaccard",
+    "index",
+    "mining",
+    "datamining",
+    "machine",
+    "learning"
+  ],
+  "author": "Michaël Zasso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mljs/tanimoto/issues"
+  },
+  "homepage": "https://github.com/mljs/tanimoto",
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "mocha-better-spec-reporter": "^2.1.1",
+    "should": "^7.0.2"
+  }
+}
