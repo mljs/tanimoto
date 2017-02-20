@@ -19,8 +19,6 @@ exports.similarity = function(A, B) {
         }
     }
 
-    console.log(`M11: ${M11}, M01: ${M01}, M10: ${M10}`);
-
     return M11 / (M01 + M10 + M11);
 
 };
