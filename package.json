@@ -1,6 +1,6 @@
 {
   "name": "ml-tanimoto",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Tanimoto similarity and distance methods",
   "main": "src/tanimoto.js",
   "directories": {
