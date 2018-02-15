@@ -1,12 +1,11 @@
-'use strict';
+import { parseBinaryString } from 'ml-bit-array';
 
-var BitArray = require('ml-bit-array');
-var bitArray = require('./bit-array');
+import { bitArraySimilarity, bitArrayDistance } from './bit-array';
 
-exports.similarity = function tanimotoBinarySimilarity(A, B) {
-    return bitArray.similarity(BitArray.parseBinaryString(A), BitArray.parseBinaryString(B));
-};
+export function binarySimilarity(A, B) {
+  return bitArraySimilarity(parseBinaryString(A), parseBinaryString(B));
+}
 
-exports.distance = function tanimotoBinaryDistance(A, B) {
-    return bitArray.distance(BitArray.parseBinaryString(A), BitArray.parseBinaryString(B));
-};
+export function binaryDistance(A, B) {
+  return bitArrayDistance(parseBinaryString(A), parseBinaryString(B));
+}
