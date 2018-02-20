@@ -34,6 +34,17 @@ valueSimilarity(values1, values2) === 0.5;
 valueDistance(values1, values2) === 0.5;
 ```
 
+### Bit-array values
+```js
+import { bitArraySimilarity, bitArrayDistance } from 'ml-tanimoto';
+
+const values1 = [1, 1, 1];
+const values2 = [1, 0, 0];
+
+bitArraySimilarity(values1, values2) === 0.333;
+bitArrayDistance(values1, values2) === 0.666;
+```
+
 ## [API Documentation](https://mljs.github.io/tanimoto/)
 
 ## License

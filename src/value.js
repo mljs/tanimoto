@@ -1,3 +1,9 @@
+/**
+ * Calculates similarity among non binary elements
+ * @param {Array} A - first array of elements to compare
+ * @param {Array} B - second array of elements to compare
+ * @return {number}
+ */
 export function valueSimilarity(A, B) {
   const union = new Set(A.concat(B));
   A = new Set(A);
@@ -20,6 +26,12 @@ export function valueSimilarity(A, B) {
   return M11 / (M01 + M10 + M11);
 }
 
+/**
+ * Calculates distance among non binary elements
+ * @param {Array} A - first array of elements to compare
+ * @param {Array} B - second array of elements to compare
+ * @return {number}
+ */
 export function valueDistance(A, B) {
   return 1 - valueSimilarity(A, B);
 }
