@@ -30,8 +30,8 @@ import { valueSimilarity, valueDistance } from 'ml-tanimoto';
 const values1 = [true, true, true];
 const values2 = [true, false, false];
 
-valueSimilarity(values1, values2) === 0.5;
-valueDistance(values1, values2) === 0.5;
+valueSimilarity(values1, values2) === 0.333;
+valueDistance(values1, values2) === 0.666;
 ```
 
 ### Bit-array values

@@ -1,10 +1,10 @@
 import { valueSimilarity, valueDistance } from '..';
 
-var values1 = ['1', 1, 'x', true, 'true', []];
-var values2 = [true, false, 'y', 'l', 5, '1', []];
-const M01 = 5;
-const M10 = 4;
-const M11 = 2;
+const values1 = [true, true, false, false];
+const values2 = [true, false, true, false];
+const M01 = 1;
+const M10 = 1;
+const M11 = 1;
 
 describe('tanimoto on value arrays', () => {
   it('similarity', () => {

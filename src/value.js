@@ -5,21 +5,19 @@
  * @return {number}
  */
 export function valueSimilarity(A, B) {
-  const union = new Set(A.concat(B));
-  A = new Set(A);
-  B = new Set(B);
   let M11 = 0;
   let M01 = 0;
   let M10 = 0;
-  for (let key of union) {
-    if (A.has(key)) {
-      if (B.has(key)) {
+  const len = Math.min(A.length, B.length);
+  for (let index = 0; index < len; index++) {
+    if (A[index] || B[index]) {
+      if (A[index] && B[index]) {
         M11++;
-      } else {
+      } else if (A[index]) {
         M10++;
+      } else {
+        M01++;
       }
-    } else if (B.has(key)) {
-      M01++;
     }
   }
 
